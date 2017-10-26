@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Log In</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link rel="stylesheet" href="styles.css"/>
+  </head>
+  <body background="http://www.florestaua.com/wp-content/uploads/2015/09/Microphone-Old.jpg">
+    <header>
+      <nav class="black">
+        <div class="nav-wrapper">
+          <link href = "image/icon.gif.png" rel="icon" type="image/gif">
+          <a href="#" class="center"></a>
+          <a id="nav-mobile" class="center hide-on-med-and-down">
+            <a href="/">Home</a>
+            <a href="/about">About</a>
+            <a href="/contact">Contact</a>
+            <a href="/login">Log In</a>
+        </div>
+      </nav>
+    <header>
+
+    <main>
+      <div >
+        <h1 href="#" class="center font-weight grey-text text-lighten-4">LineUp</h1>
+        <h4 href="#" class="center grey-text text-lighten-4">Log In</h4>
+        <div class="row">
+          <form action="/users" method="post" class="col s12">
+            <div class="row">
+              <div class="input-field col s12">
+                <input type="text" name="first_name" placeholder="First Name">
+                <input type="text" name="last_name" placeholder="Last Name">
+                <input type="date" name="birthdate" placeholder="birthdate">
+                <input type="text" name="city" placeholder="city">
+                <input id="emailAddress" type="email">
+                <input type="text" name="username" placeholder="username" class="grey-text text-black" class="validate">
+                <input type="password" name="password" placeholder="password">
+        <!---   <input type="submit" value="Submit">  --->
+              </div>
+            </div>
+            <div>
+              <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+                <i class="material-icons center"></i>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <footer class="page-footer black">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">LineUp</h5>
+            <p class="grey-text text-lighten-4">Find local artists, venues, and tickets wherever you are with a single click.</p>
+          </div>
+          <div class="col l4 offset-l2 s12">
+            <h5 class="white-text">Links</h5>
+            <ul>
+              <li><a class="grey-text text-lighten-3" href="/">Home</a></li>
+              <li><a class="grey-text text-lighten-3" href="/about">About</a></li>
+              <li><a class="grey-text text-lighten-3" href="/contact">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+        <a href="https://www.linkedin.com/in/stephanie-baron/">© 2017 Stephanie Baron<a>
+        <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <!-- <script type="text/javascript" src="js/materialize.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
