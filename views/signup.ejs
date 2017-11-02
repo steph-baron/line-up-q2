@@ -3,51 +3,89 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Log In</title>
+    <title>Sign Up</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
     <link rel="stylesheet" href="styles.css"/>
   </head>
-  <body background="http://www.florestaua.com/wp-content/uploads/2015/09/Microphone-Old.jpg">
+  <body>
     <header>
       <nav class="black">
         <div class="nav-wrapper">
-          <link href = "image/icon.gif.png" rel="icon" type="image/gif">
-          <a href="#" class="center"></a>
-          <a id="nav-mobile" class="center hide-on-med-and-down">
-            <a href="/">Home</a>
-            <a href="/about">About</a>
-            <a href="/contact">Contact</a>
-            <a href="/login">Log In</a>
+          <a href="#!" class="brand-logo center">LineUp</a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="/">Home</a></li>
+            <li><a href="/signup">Sign Up</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/Contact">Contact</a></li>
+            <!-- <li class="active"><a href="collapsible.html"></a></li> -->
+          </ul>
         </div>
       </nav>
     <header>
 
     <main>
-      <div >
-        <h1 href="#" class="center font-weight grey-text text-lighten-4">LineUp</h1>
-        <h4 href="#" class="center grey-text text-lighten-4">Log In</h4>
-        <div class="row">
-          <form action="/users" method="post" class="col s12">
+      <h1 href="#" class="center font-weight blue-text text-lighten-4">LineUp</h1>
+      <h3 href="#" class="center blue-text text-lighten-4">Sign Up</h3>
+      <div class="center">
+      <div class="row">
+          <form action="/signup" method="post" class="col s6">
             <div class="row">
-              <div class="input-field col s12">
-                <input type="text" name="first_name" placeholder="First Name">
-                <input type="text" name="last_name" placeholder="Last Name">
-                <input type="date" name="birthdate" placeholder="birthdate">
-                <input type="text" name="city" placeholder="city">
-                <input id="emailAddress" type="email">
-                <input type="text" name="username" placeholder="username" class="grey-text text-black" class="validate">
-                <input type="password" name="password" placeholder="password">
-        <!---   <input type="submit" value="Submit">  --->
+              <div class="input-field col s6">
+                <input type="text" name="firstname" placeholder="First Name">
+                <label for="first_name">First Name</label>
+              </div>
+              <div class="input-field col s6">
+                <input type="text" name="lastname" placeholder="Last Name">
+                <label for="last_name">Last Name</label>
               </div>
             </div>
-            <div>
-              <button class="btn waves-effect waves-light" type="submit" name="action">Submit
-                <i class="material-icons center"></i>
-              </button>
+            <div class="row">
+              <div class="input-field col s6">
+                <input type="text" name="city" placeholder="city">
+                <label for="city">City</label>
+              </div>
+              <div class="input-field col s6">
+                <input type="text" name="state" placeholder="state">
+                <label for="state">State</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s6">
+                <input type="text" name="username" placeholder="username" class="grey-text text-black" class="validate">
+                <label for="username">Username</label>
+              </div>
+              <div class="input-field col s6">
+                <input type="password" name="password" placeholder="password">
+                <label for="password">Password</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s6">
+                <input type="date" name="birthdate">
+                <label class="active" for="birthdate">Birthday</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col s12">
+                <div class="input-field inline">
+                  <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+                    <i class="material-icons center"></i>
+                  </button>
+                </div>
+              </div>
             </div>
           </form>
+        </div>
+      </div>
+      <div>
+        <div class="carousel">
+          <a class="carousel-item" href="#one!"><img src="https://images-na.ssl-images-amazon.com/images/I/81M1Mt--gcL._SY445_.jpg"></a>
+          <a class="carousel-item" href="#two!"><img src="https://s3.amazonaws.com/bit-photos/large/6614128.jpeg"></a>
+          <a class="carousel-item" href="#three!"><img src="https://theearlyregistration.files.wordpress.com/2017/05/33907613073_ac12444beb_k.jpg?w=606&h=388"></a>
+          <a class="carousel-item" href="#four!"><img src="https://static1.squarespace.com/static/54b59d19e4b0adb56c393e4d/t/585c604b46c3c4e0f54748b2/1482448974926/"></a>
+          <a class="carousel-item" href="#five!"><img src="https://ksassets.timeincuk.net/wp/uploads/sites/55/2014/03/7.2013BigPictameimpala-5_RJ080713-2.jpg"></a>
         </div>
       </div>
     </main>

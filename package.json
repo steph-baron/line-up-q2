@@ -4,13 +4,27 @@
   "description": "Fullstack application for Q2 project: LineUp",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "author": "Stephanie Baron",
   "license": "ISC",
   "dependencies": {
+    "bcrypt-as-promised": "^1.1.0",
+    "ejs": "^2.5.7",
     "express": "^4.16.2",
+    "jdenticon": "^1.7.2",
     "knex": "^0.13.0",
-    "pg": "^7.3.0"
-  }
+    "pg": "^7.3.0",
+    "request": "^2.83.0"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/steph-baron/line-up-q2.git"
+  },
+  "bugs": {
+    "url": "https://github.com/steph-baron/line-up-q2/issues"
+  },
+  "homepage": "https://github.com/steph-baron/line-up-q2#readme"
 }
