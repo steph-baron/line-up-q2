@@ -81,30 +81,29 @@ app.get('/users/:id', function(req,res,next) {
     knex('user_accounts_artists')
     .where('user_account_id', id)
     .then(function(artistUsers){
+      if (artistUsers > 0){
       var url = "https://rest.bandsintown.com/artists/";
       var appId = "?app_id=lineupq2";
+      console.log("HELLO!!!")
+      // for(var i = 0; i < artistUsers.length; i++){
+        var searchTerm = artistUsers[0].artist_name;
+        request(url + searchTerm + appId, function(error, response, body) {
 
-      for(var i = 2; i < artistUsers.length; i++){
-        var searchTerm = artistUsers[i].artist_name;
-        request(url + searchTerm + appId, function(error, response, body){
           var userArtists = JSON.parse(body);
-          // console.log(userArtists);
+          console.log(userArtists);
+          res.render("userprofile", {user, userArtists})
 
-          // console.log(response);
-          // userArtists = response+response;
         })
-        userArtists=userArtists+userArtists;
-
-      }
-
-    // console.log("This is userArtists: "+userArtists);
-
-    })
+      // }
+    }
+    else res.render("userprofile", {user, userArtists})
   })
-  .catch(function(err){
-    next(err);
+  })
+    .catch(function(err){
+      next(err);
   })
 })
+
 
 
 // Making API call to BIT and getting the name of the artist

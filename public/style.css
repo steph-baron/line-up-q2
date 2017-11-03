@@ -1,4 +1,4 @@
-body {
+  body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
@@ -7,6 +7,18 @@ body {
   main {
     flex: 1 0 auto;
   }
+
   .btn, .btn-large {
     background-color: #e91e63 !important;
   }
+
+  html {
+    font-family: "Courier New", Courier, monospace;
+    }
+    .center .hide-on-med-and-down {
+      font-size: 20px;
+      font-weight: 100;
+    }
+    .btn, .btn-large {
+      background-color: #e91e63 !important;
+    }
